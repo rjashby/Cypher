@@ -16,6 +16,9 @@ function reverseCapLetters(userSentence) {
   return userSentence.concat(newReverseString);
 }
 
-function third (userSentence) {
-//   return capLetters(userSentence).concat(reverseCapLetters(userSentence));
-// }
+function fourth() {
+  let indexNumber = Math.floor(userSentence.length / 2);
+  let beginLetter = userSentence.charAt(indexNumber);
+  console.log(beginLetter);
+  return beginLetter.concat(reverseCapLetters());
+}
